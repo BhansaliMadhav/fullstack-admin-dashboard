@@ -84,6 +84,7 @@ const Product = ({
 
 function Products() {
   const { data, isLoading } = useGetProductsQuery();
+  console.log(process.env.REACT_APP_BASE_URL);
   const isNonMobile = useMediaQuery("(min-width: 1000px)");
   // console.log("nom-mobile", isNonMobile);
   // console.log("data", data);
